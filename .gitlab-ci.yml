@@ -1,0 +1,19 @@
+#
+# SPDX-License-Identifier: AGPL-3.0+
+#
+# Copyright (C) 2018 Olliver Schinagl <oliver@schinagl.nl>
+
+stages:
+  - test
+
+# Common requisites
+# =================
+.parameters_common: &parameters_common
+  tags:
+    - linux
+
+test:
+  <<: *parameters_common
+  stage: test
+  script:
+    - echo "Hello World!"
